@@ -3,7 +3,7 @@ class Appointment < ApplicationRecord
   belongs_to :patient
   
   def date_time
-    self.appointment_datetime.to_datetime
+    d = self.appointment_datetime.to_datetime
     
   end 
 end
