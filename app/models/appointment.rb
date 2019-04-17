@@ -3,6 +3,6 @@ class Appointment < ApplicationRecord
   belongs_to :patient
   
   def date_time
-    self.appointment_datetime.split("-")
+    self.appointment_datetime.to_date
   end 
 end
