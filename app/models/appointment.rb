@@ -4,6 +4,6 @@ class Appointment < ApplicationRecord
   
   def date_time
     d = self.appointment_datetime.to_datetime
-    d.strftime("%B %d %Y")
+    d.strftime("%B %d, %Y")
   end 
 end
